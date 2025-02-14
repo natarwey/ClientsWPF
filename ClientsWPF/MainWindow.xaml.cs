@@ -24,6 +24,8 @@ namespace ClientsWPF
         public MainWindow()
         {
             InitializeComponent();
+
+            CBRoles.ItemsSource = new List<string>() { "админ", "пользователь" };
         }
         private async void Refresh()
         {
